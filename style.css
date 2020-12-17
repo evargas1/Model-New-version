@@ -588,6 +588,9 @@ header {
 
 /* ---------------This will beigin the code for the about page that will include tetsiomnals and a short about us story ---------------- */
 
+.about-us{
+  background-color: rgb(170, 155, 175) !important;
+}
 .about-page h1{
   font-weight: 400;
   font-size: 48px;
@@ -615,7 +618,7 @@ header {
   letter-spacing: 3px;
   text-transform: uppercase;
   border: solid 3px #fff;
-  background-color: rgb(99, 94, 98);
+  background-color: rgb(170, 155, 175) !important;
 
 }
 .learn-more-butt button a {
@@ -670,9 +673,10 @@ button a:hover {
 /* Slideshow container */
 .slideshow-container {
   position: absolute;
-  background: #f1f1f1f1;
+  background-color: rgb(183, 174, 185) !important;
   width: 550px;
   top: 85%;
+  border: 2px solid #fff;
 
 }
 
@@ -691,7 +695,7 @@ button a:hover {
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: #888;
+  background-color: rgb(163, 161, 163);
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -716,9 +720,10 @@ button a:hover {
   position: absolute;
   text-align: center;
   padding: 20px;
-  background: #ddd;
+  background-color: rgb(183, 174, 185) !important;
   top: 130%;
   left: 17%;
+  border: 1px solid #fff;
 }
 
 /* The dots/bullets/indicators */
@@ -727,15 +732,16 @@ button a:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgb(170, 155, 175) !important;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  border: 1px solid #fff;
 }
 
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: black;
 }
 
 /* Add an italic font style to all quotes */
@@ -743,7 +749,7 @@ q {font-style: italic;}
 
 /* Add a blue color to the author */
 .author {
-  color: cornflowerblue;
+  color: rgb(75, 70, 70);
 }
 
 .about-page {
