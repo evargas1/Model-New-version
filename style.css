@@ -623,10 +623,12 @@ header {
 }
 .learn-more-butt button a {
   color: #fff;
+  text-decoration: none;
 }
 .learn-more-butt
 button a:hover {
-  color: rgb(180, 185, 180);
+  color:rgb(38, 35, 39) ;
+
   text-decoration: none;
 }
 
@@ -668,25 +670,21 @@ button a:hover {
 .learn-more-butt{
   margin-bottom: 5px;
 }
-
-
 /* Slideshow container */
 .slideshow-container {
   position: absolute;
   background-color: rgb(183, 174, 185) !important;
-  width: 550px;
+  width: 600px;
   top: 85%;
   border: 2px solid #fff;
 
 }
-
 /* Slides */
 .mySlides {
   margin-top: 50px;
   padding: 40px;
   text-align: center;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -695,26 +693,27 @@ button a:hover {
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  background-color: rgb(163, 161, 163);
+  background-color: rgb(207, 207, 207);
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
+  color: #36473d;
 }
-
+.prev{
+  color: #36473d;
+}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
-
 /* The dot/bullet/indicator container */
 .dot-container {
   position: absolute;
@@ -725,7 +724,6 @@ button a:hover {
   left: 17%;
   border: 1px solid #fff;
 }
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -738,20 +736,16 @@ button a:hover {
   transition: background-color 0.6s ease;
   border: 1px solid #fff;
 }
-
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
-  background-color: black;
+  background-color: background-color: #fff;
 }
-
 /* Add an italic font style to all quotes */
 q {font-style: italic;}
-
 /* Add a blue color to the author */
 .author {
   color: rgb(75, 70, 70);
 }
-
 .about-page {
   float: right;
   color: #fff;
