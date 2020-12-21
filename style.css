@@ -211,7 +211,7 @@ header {
   width: 40px !important;
   height: 40px !important;
   text-align: center !important;
-  padding-top: 8px !important;
+  padding-top: 0 !important;
   border: 2px solid rgb(88, 88, 88, 0.4) !important;
 }
 .slick-dots li.slick-active button:before {
@@ -428,12 +428,14 @@ header {
   border: solid 3px #fff;
   background-color: rgb(38, 44, 38);
 }
-#box-info2 {
+/* This function adjusted the height and posistion of the first two models but I didnt like it.  If iI wanth the Height to go back and appear higher I can just uncomment the code below. */
+
+/* #box-info2 {
   padding: 130px 690px 150px 40px;
 }
 #box-info1 {
   padding: 130px 690px 150px 40px;
-}
+} */
 #two-butt button {
   padding: 10px;
   font-size: 15px;
@@ -533,7 +535,7 @@ header {
 .box-coll .under2 {
   position: absolute;
   top: 95%;
-  left: 15%;
+  left: 10%;
   color: rgb(176, 195, 223);
   font-size: 100px;
   font-weight: 300;
@@ -542,7 +544,7 @@ header {
 .box-coll .under22 {
   position: absolute;
   top: 95%;
-  left: 15%;
+  left: 10%;
   color: rgb(190, 194, 138);
   font-size: 100px;
   font-weight: 300;
@@ -560,7 +562,7 @@ header {
 .box-coll .under222 {
   position: absolute;
   top: 95%;
-  left: 15%;
+  left: 10%;
   color: rgb(145, 66, 66);
   font-size: 100px;
   font-weight: 300;
@@ -569,7 +571,7 @@ header {
 .box-coll .under2222 {
   position: absolute;
   top: 95%;
-  left: 15%;
+  left: 10%;
   color: rgb(118, 60, 133);
   font-size: 100px;
   font-weight: 300;
@@ -579,7 +581,7 @@ header {
 .box-coll .under22222 {
   position: absolute;
   top: 95%;
-  left: 15%;
+  left: 10%;
   color: rgb(131, 116, 66);
   font-size: 100px;
   font-weight: 300;
@@ -738,7 +740,7 @@ button a:hover {
 }
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
-  background-color: background-color: #fff;
+background-color: #fff;
 }
 /* Add an italic font style to all quotes */
 q {font-style: italic;}
@@ -760,24 +762,40 @@ q {font-style: italic;}
 /* Style inputs with type="text", select elements and textareas */
 
 
-
-
+.last-sec{
+  background-color: rgb(43, 43, 90) !important;
+}
+/* .container form{
+  background-color: rgb(71, 61, 47);
+} */
+.container label{
+  color: #59595a;
+  font-size: 12px;
+}
+.input-box{
+  background-color: rgb(230, 225, 235);
+}
 
 input[type=text], select, textarea {
   width: 100%; /* Full width */
-  height: 20px;
+  height: 30px;
   padding: 12px; /* Some padding */  
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
+  margin-bottom: 15px;/* Allow the user to vertically resize the textarea (not horizontally) */
+
 }
+/* .container option{
+  color: #0a0913;
+} */
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #aa9457;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -787,22 +805,24 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #a08741;
 }
 
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 10px;
+
 }
 /* had to change padding so it would not overlay with the  */
 .contact-us {
   float: right;
   color: #fff;
-  padding: 120px 690px 50px 40px;
+  padding: 120px 690px 50px 5px;
   position: absolute;
   left: 10%;
+  width: 1200px;
 
   z-index: 2;
 }
