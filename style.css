@@ -51,32 +51,41 @@ header {
   color: rgb(209, 206, 206);
   text-decoration: none;
 }
+.menu-icon{
+  width: 28px;
+  margin-left: 40px;
+  display: none;
+  /* hides the icone when large */
+  
 
-.toggleBtn {
-  /* display: inline-block; */
-  width: 30px;
-  height: 30px;
-  float: left;
-  margin-top: 5px;
-  margin-left: 50px;
-  background-color: teal;
-  object-position: right;
-  top: 10%;
-  right: 5%;
 }
-.toggleBtn span {
-  float: left;
-  width: 30px;
-  height: 2px;
-  background-color: #fff;
-  /* top: 0;
-  left: 0; */
-  transition: all ease-in-out 0.1s;
-  object-position: right;
-}
-.toggleBtn span:nth-child(2) {
-  top: 15px;
-  object-position: right;
+
+@media only screen and (max-width: 800px){
+  .menu ul{
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: rgb(19, 16, 16);
+      width: 100vw;
+     
+      overflow: hidden;
+      transition: max-height 0.5s;
+  }
+  .menu ul li{
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: right;
+  }
+  .menu ul li a{
+      color: #fff;
+  }
+  .menu-icon{
+      display: block;
+      cursor: pointer;
+  }
+ 
 }
 
 /*      SLIDER     */
@@ -95,8 +104,38 @@ header {
 .slider .three-img {
   background-color: rgb(14, 11, 9);
 }
-
 /*       SLIDER CAPTION  */
+
+@media only screen and (max-width: 1250px) {
+  .caption{
+    display: none;
+  }
+  .close{
+    display: none;
+  }
+  .caption-small{
+    display: contents;
+  }
+}
+
+
+.caption-small{
+  width: 50%;
+  display: flex;
+  display: none;
+  background-color: #0a0913;
+  z-index: 2;
+}
+.caption-small h1{
+  
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 10px 15px 0 rgba(0 0 0 / 0.25);
+
+
+}
 .caption {
   float: left;
   color: #fff;

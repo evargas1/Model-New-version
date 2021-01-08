@@ -24,14 +24,17 @@
                 <i class="fa fa-wpexplorer fa-5x" aria-hidden="true" style="color: #fff;" ></i>
             </div>
             <div class="menu">
-                <ul>
+                <ul id="MenuItems">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./models.html">Models</a></li>
                     <li><a href="./collections.html">Collections</a></li>
                     <li><a href="./about.html">About</a></li>
 
                 </ul>
-                
+                <div class="menu-icon">
+                    <i class="fas fa-bars fa-4x" onclick="menutoggle()" class="menu-icon" style="color: #fff;"></i>
+                </div>
+    
             </div>
         </header>
 
@@ -67,11 +70,23 @@
                 <div class="item three-img">
                     <div class="item-image">
                         <img src="./img/model_black.jpeg" alt="">
+
+                        <!-- for smaller tablet screens -->
+                       
+                    
                     </div>
+                    <div class="caption-small" >
+                        <h1>Fashion</h1>
+                        <h4>Top fashioned Model Awards</h4>
+                    </div>
+                    
                     <div class="caption" data-count="03">
                         <h1>Fashion</h1>
                         <h4>Top fashioned Model Awards</h4>
                     </div>
+                    
+
+
                     <div class="slide-overlay"></div>
                 </div>
                 </div>
@@ -79,11 +94,11 @@
             </div>
 
             <!--Bottom Link  -->
-            <div class="bottom-link">
+            <div class="bottom-link close" >
                 <div class="left">
-                    <a href="#">Autumn & Winter 2018</a>
+                    <a  href="#">Autumn & Winter 2018</a>
                     <a href="#">Autumn & Winter 2019</a>
-                    <a href="#">Spring & Summer 2019</a>
+                    <a  href="#">Spring & Summer 2019</a>
                 </div>
                 <div class="right">
                     <a href="#">Explore Model</a>
@@ -117,6 +132,26 @@
 
 
 </script>
+
+
+<!-- js fo rtoggle menu -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px" )
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+    
+    </script>
 
 </body>
 </html>
