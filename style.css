@@ -85,7 +85,114 @@ header {
       display: block;
       cursor: pointer;
   }
+
+
+  /* secomd header on the pages made responsive */
+
+.sec-menu-icon{
+  float: right;
+}
+  .sec-menu ul{
+    position: r;
+    top: 70px;
+    
+    background: rgb(19, 16, 16);
+    width: 100vw;
+    float: right;
+  display: flex !important;
+  flex-direction: column !important;
  
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sec-menu ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.sec-menu ul li a{
+    color: #fff;
+}
+
+ 
+}
+
+/* This will be right before the menu bar disappears */
+@media only screen and (max-width: 900px) {
+  .box-info{
+    height: 30vh !important;
+    padding: 10px !important;
+    margin-top: 510px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .box-info h1{
+    padding: 10px !important;
+    font-size: 20px !important;
+    top: 10%;
+
+  }
+  .box-info h4{
+    font-size: 14px !important;
+  }
+
+
+  /* same code different posistion for th about page */
+  .about-page{
+    height: 30vh !important;
+    width: 50%;
+  
+    padding: 10px !important;
+    margin-top: 130px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .about-page h1{
+    padding: 10px !important;
+    font-size: 20px !important;
+    top: 10%;
+  }
+  .about-page h5{
+    font-size: 14px !important;
+
+  }
+  .learn-more-butt{
+    display: none;
+  }
+  .slideshow-container{
+    margin-top: 180px;
+    width: 80vw !important;
+  }
+  .mySlides{
+    width: 80vw;
+  }
+  .contact-us{
+    width: fit-content;
+  }
+  .container{
+    width: 80vw;
+  }
+
+  
+
+}
+
+
+@media only screen and (max-width: 1300px){
+  .dot-container{
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 1380px){
+  .under, .under1, .under2, .under22, .under222,  .under2222, .under22222{
+    display: none;
+  }
+
 }
 
 /*      SLIDER     */
@@ -107,15 +214,11 @@ header {
 /*       SLIDER CAPTION  */
 
 @media only screen and (max-width: 1250px) {
-  .caption{
-    display: none;
-  }
+ 
   .close{
     display: none;
   }
-  .caption-small{
-    display: contents;
-  }
+  
   .item{
     height: 100vh;
   }
@@ -126,6 +229,30 @@ header {
   .slick-dots{
     left: 87% !important;
   }
+  .item-image{
+    height: 100vh;
+  }
+  .caption{
+    margin-top: 320px;
+    width: 20%;
+  }
+  .caption h1{
+    display: none;
+  }
+  .caption::before{
+    display: none;
+  }
+  .box-info{
+    height: 100vh;
+  }
+  .view-more-butt{
+    display: none;
+  }
+  .box-info p{
+    display: none;
+  }
+  
+  
 }
 
 
@@ -226,7 +353,7 @@ header {
 .slick-dots {
   /* width: 200px !important; */
   position: relative !important;
-  bottom: 290px !important;
+  bottom: 360px !important;
   left: 95% ;
 
   float: right;
