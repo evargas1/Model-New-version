@@ -205,6 +205,10 @@ header {
   float: left;
   /* height: 100vh; */
   /* height: 80vh; */
+  /* height: 100vh; */
+}
+.slide-overlay{
+  height: 100vh;
 }
 .slider .one-img {
   background-color: rgb(46, 54, 58);
