@@ -116,6 +116,16 @@ header {
   .caption-small{
     display: contents;
   }
+  .item{
+    height: 100vh;
+  }
+  .slider{
+    display: none;
+  }
+  /* This will move the dots to the left when screen is smaller yayayayyayay next title */
+  .slick-dots{
+    left: 87% !important;
+  }
 }
 
 
@@ -215,33 +225,37 @@ header {
 /*         SLIDER DOTS       */
 .slick-dots {
   /* width: 200px !important; */
-  bottom: inherit;
-  top: 30%;
-  right: -42.5%;
+  position: relative !important;
+  bottom: 290px !important;
+  left: 95% ;
+
+  float: right;
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important;
-  width: 670px !important;
+  
+  width: 100vw !important;
+ 
 }
 
 .slick-dots button {
   transition: all ease 0.3s;
   width: 40px;
+
 }
 
 .slick-dots li {
   width: 40px !important;
   height: 40px !important;
   background-color: transparent !important;
-  text-align: center !important;
+  
   margin: 10px !important;
 }
 
 .slick-dots li button:before {
   content: "";
   font-size: 60px;
-  top: 37%;
-  right: 0;
+  /* top: 37%;
+  right: 0; */
   margin: 0 auto;
   background-color: rgb(250, 248, 246, 0.4);
   color: rgb(88, 88, 88) !important;
@@ -307,7 +321,7 @@ header {
   position: absolute;
   width: 40px;
   height: 1px;
-  background-color: #fff;
+  
   right: 25px;
   top: 50%;
 }
